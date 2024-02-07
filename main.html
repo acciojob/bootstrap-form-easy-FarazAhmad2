@@ -4,10 +4,106 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<section class="m-4 p-3 border border-2 border-lgray">
+      <form action="#" method="POST">
+        <h1 class="my-5 text-center">Internship Form</h1>
+        <div class="row my-4">
+          <div class="col-sm-4">
+            <label for="first-name-input">First Name</label>
+            <input
+              type="text"
+              id="first-name-input"
+              name="firstName"
+              class="w-100 border border-2 rounded"
+             required
+            />
+          </div>
+          <div class="col-sm-4">
+            <label for="last-name-input">Last Name</label>
+            <input
+              type="text"
+              id="last-name-input"
+              name="lastName"
+              class="w-100 border border-2 rounded"
+              required
+            />
+          </div>
+          <div class="col-sm-4">
+            <label for="email-input">Email Address</label>
+            <input
+              type="email"
+              id="email-input"
+              name="email"
+              class="w-100 border border-2 rounded"
+              required
+            />
+          </div>
+        </div>
+        <div class="row my-2">
+          <div class="col-sm-6">
+            <label for="college-input">College</label>
+            <input
+              type="text"
+              id="college-input"
+              name="college"
+              class="w-100 border border-2 rounded"
+              required
+            />
+          </div>
+          <div class="col-sm-3">
+            <label for="graduation-year-input">Graduation Year</label>
+            <select
+              name="graduationYear"
+              id="graduation-year-input"
+              class="my-1 w-100 border border-2 rounded"
+              required
+            >
+              <option value="choose">Choose...</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+            </select>
+          </div>
+          <div class="col-sm-3">
+            <label for="roll-no-input">Roll No.</label>
+            <input
+              type="text"
+              id="roll-no-input"
+              name="rollNo"
+              class="w-100 border border-2 rounded"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <input
+              type="checkbox"
+              id="conditions-checkbox"
+              name="termsAndConditions" class="form-check-input"
+              required
+            />
+            <label for="conditions-checkbox"
+              >Agree to terms and conditions</label
+            >
+          </div>
+        </div>
+        <div class="btn-group mt-4" role="group" aria-label="Basic outlined example">
+          <button type="submit" class="btn bg-primary text-white">Submit form</button>
+        </div>
+      </form>
+    </section>
     <script type="text/javascript" src="./script.js">
 </script>
 
